@@ -21,7 +21,7 @@ class HomeController extends Controller
         $articles = Article::where('status',3)->orderBy('id','desc')->paginate(10);
         $baseConfig = BaseConfig::first();
         //广告展示
-        $advertisements = Advertisement::where('status',3)->get();
+        $advertisements = Advertisement::where('status',1)->get();
         return view('home.index',['categories'=>$categories,'baseConfig'=>$baseConfig,'advertisements'=>$advertisements,'articles'=>$articles]);
     }
 
