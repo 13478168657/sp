@@ -41,7 +41,7 @@ class HomeController extends Controller
         $pageSize = 10;
         $category =  Category::where('id',$id)->first();
         $categories = Category::where('base_id',1)->orderBy('number','desc')->limit(3)->get();
-        $advertisements = Advertisement::where('status',3)->get();
+        $advertisements = Advertisement::where('status',1)->get();
         $articles = Article::where('status',3)->where('category_id',$id)->orderBy('created_at','desc')->paginate($pageSize);
 //        $pageSize = PageUtil::getPage($page,$articles->total(),$pageSize,$id,'s');
         return view('home.list',['category'=>$category,'categories'=>$categories,'articles'=>$articles,'advertisements'=>$advertisements,'pageSize'=>$pageSize,'page'=>$page]);
