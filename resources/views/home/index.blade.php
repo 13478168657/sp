@@ -179,7 +179,7 @@ $(".toggle-btn").on('click',function(){
            </h3>
           <div class="thumb-extra">
               <?php
-                 $category = App\Models\Cateogry::where("id",$article->category_id)->select('name')->first();
+                 $category = App\Models\Category::where("id",$article->category_id)->select('name')->first();
               ?>
               <span class="keyword">{{$category?$category->name:''}}</span>
               <span class="source">{{date('m-d',strtotime($article->created_at))}}</span>
