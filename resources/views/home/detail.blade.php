@@ -3,9 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" name="viewport" />
-    <meta name="keywords" content='消防员;火场;小猫;正能量'>
-    <meta name="description" content='近日，“大连消防员火场救猫咪”一事被许多网友争相点赞，10日上午，视频中的主人公大连消防中山中队副队长汪鹏飞告诉中国青年网记者，官兵们在将火情扑灭后进行排查工作时听到小猫的叫声。官兵们寻声寻找，这才发现了快冻僵的小猫。在小猫差不多恢复精神后，猫主人也找到了它，获救小猫得以“物归原主”。
-'>
+    <meta name="keywords" content='{{$article->meta_keyword}}'>
+    <meta name="description" content='{{$article->meta_description}}'>
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <link rel="stylesheet" href="/css/wzy_common.css">
@@ -14,7 +13,7 @@
     <script src="/js/20170524zepto.js"></script>
     <script src="/js/wzy_common.js"></script>
     <script async custom-element="amp-analytics" src="/js/amp-analytics-0.1.js"></script>
-    <title>消防员回应火场救结冰小猫：会将消防的正能量接力传递下去——中国青年网 触屏版</title>
+    <title>{{$article->title}}</title>
     <!--head标签底部广告start-->
     <style></style>
     <!--head标签底部广告end-->
