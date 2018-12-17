@@ -144,7 +144,7 @@
 
                     @foreach($advertisements as $ad)
                         <div class="swiper-slide">
-                            <a href="{{$ad->url}}"><img src="{{env('IMG_URL')}}/{{$ad->photo}}" alt="111.png" border='0'/></a>
+                            <a href="{{$ad->url}}"><img src="{{env('IMG_URL')}}/images/uploads/thumb/{{$ad->photo}}" alt="111.png" border='0'/></a>
                             <div class="swiper-text">
                                 <h3>
                                     <a href="{{$ad->url}}">{{$ad->desc}}</a>
@@ -165,7 +165,7 @@
                 @foreach($articles as $article)
                     <li class="thumb-item">
                         <div class="thumb-img">
-                            <a href="/article/detail/{{$article->id}}.html"><img src="{{env('IMG_URL')}}/{{$article->thumbPic}}" border='0'/></a>
+                            <a href="/article/detail/{{$article->id}}.html"><img src="{{env('IMG_URL')}}/images/uploads/thumb/{{$article->thumbPic}}" border='0'/></a>
                         </div>
                         <div class="thumb-info">
                             <h3 class="thumb-tit">
