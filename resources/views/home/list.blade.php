@@ -177,7 +177,10 @@
                                 @endif
                             </h3>
                             <div class="thumb-extra">
-                                <span class="keyword">{{$article->source}}</span>
+                                <?php
+                                $category = App\Models\Category::where("id",$article->category_id)->select('name')->first();
+                                ?>
+                                <span class="keyword">{{$category?$category->name:''}}</span>
                                 <span class="source">{{date('m-d',strtotime($article->created_at))}}</span>
                             </div>
                         </div>
