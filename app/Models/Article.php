@@ -8,6 +8,9 @@ class Article extends Model
 {
     use SoftDeletes;
     public function customer(){
-    	return $this->belongTo('App\Models\Customer');
+    	return $this->belongsTo('App\Models\Customer');
+    }
+    public function cateory(){
+        return $this->belongsTo('App\Models\Category','category_id');
     }
 }

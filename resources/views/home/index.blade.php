@@ -178,7 +178,10 @@ $(".toggle-btn").on('click',function(){
               @endif
            </h3>
           <div class="thumb-extra">
-              <span class="keyword">{{$article->source}}</span>
+              <?php
+                 $category = $article->category;
+              ?>
+              <span class="keyword">{{$category?$category->name:''}}</span>
               <span class="source">{{date('m-d',strtotime($article->created_at))}}</span>
           </div>
         </div>
