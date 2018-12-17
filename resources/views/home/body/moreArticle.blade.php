@@ -2,7 +2,7 @@
     <li class="thumb-item">
         <div class="thumb-img">
 
-            <a href="/article/detail/{{$article->id}}.html"><img src="{{env('IMG_URL')}}/{{$article->thumbPic}}" border='0'/></a>
+            <a href="/article/detail/{{$article->id}}.html"><img src="{{env('IMG_URL')}}/images/uploads/thumb/{{$article->thumbPic}}" border='0'/></a>
         </div>
         <div class="thumb-info">
             <h3 class="thumb-tit">
