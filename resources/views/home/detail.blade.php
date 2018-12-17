@@ -41,7 +41,7 @@
 
 
     <header>
-        <div class="pack"> <a href="javascript:void(0)"  onclick="button_back()" id="button_back"><span class="menu"></span></a> <span class="logo"></span> <span class="people"></span> </div>
+        <div class="pack"> <a href="javascript:history.go(-1);" id="button_back"><span class="menu"></span></a> <span class="logo"></span> <span class="people"></span> </div>
     </header>
     <!--头部导航区块end-->
     <!--header-->
