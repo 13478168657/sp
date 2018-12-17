@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" name="viewport" />
-<meta name="description" content="健身教练培训网" />
-<meta name="keywords" content="健身教练培训网" />
+<meta name="description" content="{{$baseConfig->home_meta_description}}" />
+<meta name="keywords" content="{{$baseConfig->home_key_word}}" />
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
 <meta name="apple-mobile-web-app-capable" content="yes">
 

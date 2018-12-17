@@ -190,7 +190,7 @@
         </section>
     </div>
     <footer>
-        <p>证书版权所有&copy;2018</p>
+        <p>健身&copy;2018</p>
     </footer>
 </div>
 
