@@ -1,31 +1,38 @@
 <!doctype html>
 <html>
 <head>
-<meta charset="utf-8">
-<meta content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" name="viewport" />
-<meta name="description" content="{{$baseConfig->home_meta_description}}" />
-<meta name="keywords" content="{{$baseConfig->home_key_word}}" />
-<meta name="apple-mobile-web-app-status-bar-style" content="black">
-<meta name="apple-mobile-web-app-capable" content="yes">
+    <script>
+        var u = navigator.userAgent;
+        var app = navigator.appVersion;
+        var isMobile = !!u.match(/AppleWebKit.*Mobile.*/);
+        if(!isMobile) {
+            location.href="http://ban4.overseaschool.cn/";
+        }
+    </script>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" name="viewport" />
+    <meta name="description" content="{{$baseConfig->home_meta_description}}" />
+    <meta name="keywords" content="{{$baseConfig->home_key_word}}" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-capable" content="yes">
 
+    <link rel="stylesheet" href="/css/20181121mobile_page.css">
+    <link href="/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/swiper.min.css">
+    <link rel="stylesheet" href="/css/iconfont.css">
 
-<link rel="stylesheet" href="/css/20181121mobile_page.css">
-<link href="/css/font-awesome.min.css" rel="stylesheet">
-<link rel="stylesheet" href="/css/swiper.min.css">
-<link rel="stylesheet" href="/css/iconfont.css">
+    <script type="text/javascript" src="/js/jquery-index-1.9.1.js"></script>
+    <script src="/js/20170524zepto.js"></script>
+    <script src="/js/20170601mobile_common.js"></script>
+    <script src="/js/swiper.min.js"></script>
+    <script src="/js/swiper_index.js"></script>
+    <script>
+    var timestamp = Date.parse(new Date());
+    </script>
+    <script src="/js/20170606data_read.js"></script>
+    {{--<script src="/js/index.js"></script>--}}
 
-<script type="text/javascript" src="/js/jquery-index-1.9.1.js"></script>
-<script src="/js/20170524zepto.js"></script>
-<script src="/js/20170601mobile_common.js"></script>
-<script src="/js/swiper.min.js"></script>
-<script src="/js/swiper_index.js"></script>
-<script>
-var timestamp = Date.parse(new Date());
-</script>
-<script src="/js/20170606data_read.js"></script>
-{{--<script src="/js/index.js"></script>--}}
-
-<title>健身教练培训网</title>
+    <title>健身教练培训网</title>
 
 </head>
 <body>
